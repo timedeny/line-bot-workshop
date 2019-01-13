@@ -8,12 +8,12 @@ $access_token = 'vJIEowPmdyfHgrc5O2TSSloPoXb6aiuyw1xQUBUxGImky2VMCHv/TYPOmdapEuv
 
 $channelSecret = '0bc40aeffb71f2f8314581d2e01ebed5';
 
-$pushID = 'U77f3df8dad58c0e429ba7d385b7a95a2 ';
+$pushID = 'U8a92bfd43082c7ff22087c34228c57cd';
 
 $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($access_token);
 $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $channelSecret]);
 
-$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('สามารถติดต่อ reception ได้ที่เบอร์ 035212535');
+$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('มาลองตอบอะไรก็ได้กัน');
 $response = $bot->pushMessage($pushID, $textMessageBuilder);
 
 echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
