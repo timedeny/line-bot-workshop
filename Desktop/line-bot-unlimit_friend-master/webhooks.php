@@ -17,7 +17,7 @@ if (!is_null($events['events'])) {
 		// Reply only when message sent is in 'text' format
 		if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
 			// Get text sent
-			$text = $event['message']['text']."\n".$event['source']['userId']."\n".$event['replyToken'];
+			$text = $event['message']['text']."\n".$event['source']['userId']."\n";
 			// Get replyToken
 			$text2 = $text;
 			$replyToken = $event['replyToken'];
@@ -46,7 +46,7 @@ if (!is_null($events['events'])) {
 }
 require "vendor/autoload.php";
 $channelSecret = '0bc40aeffb71f2f8314581d2e01ebed5';
-$pushID = 'U8a92bfd43082c7ff22087c34228c57cd';
+$pushID = 'U0a4be35d402e2554c8388ed07897579e';
 $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($access_token);
 $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $channelSecret]);
 $textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder($text2);
