@@ -6,7 +6,7 @@ require "vendor/autoload.php";
 
 $access_token = 'HzLcHMoikqIy3hHnAZBMv/qcPjx3MGmE7Fo2C75+UlJEmXIbiP/bciNnxixZwNaT+JiSjqEYKBQMMMK0CvYGuTuPEMM9a9g5QvhGuL5Qb7/C68CXRi6d2+U3KU5VAP4GnygMrqirH1dIMS4jenxZxwdB04t89/1O/w1cDnyilFU=';
 
-$channelSecret = '*Channel_Secret*';
+$channelSecret = '592cc4bdd3c7c8ceb35d316dfa35ffe1';
 // ID ที่ต้องการส่งไปหา
 $pushID = '*ReceiverID*';
 
